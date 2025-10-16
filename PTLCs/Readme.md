@@ -5,3 +5,4 @@
 - **Introduction & Use Cases:**
   - [Point Time Locked Contract (PTLC) – River Financial](https://river.com/learn/terms/p/point-timelocked-contract-ptlc/)
   - [Point Time Locked Contract (PTLC) – Glossary – Bitcoin Treasuries](https://bitcointreasuries.net/glossary/point-time-locked-contract)
+  - [Adaptor signatures ] (https://bitcoinops.org/en/topics/adaptor-signatures/)
