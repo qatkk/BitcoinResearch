@@ -1,5 +1,5 @@
-# Fedimint Protocol 
-Here I'll be writing my notes on how the fedimint protocol works. 
+# eCash History and Building Blocks 
+Here I'll be writing my notes on how the fedimint and eCash protocols works. 
 
 ## eCash and Blind Signatures
 - Each note has:
@@ -21,6 +21,7 @@ Here I'll be writing my notes on how the fedimint protocol works.
 
     Cut and choose. A probabilistic algorithm to make sure that the receiver is receiving a reference for a note not spent before. 
 - Detailed description of cut and choose please! 
+    <!-- Todo -->
 
     Overal idea: If you try to double spend a note, it becomes obvious that you've cheated. 
 
@@ -31,12 +32,29 @@ Here I'll be writing my notes on how the fedimint protocol works.
 - If we have fixed denomination, how can we pay arbitary values? 
 
     If we want to pay 15 e-cash but have a 16 e-cash note, what shall we do?
+        You basically have to give the 16 e-cash note and get a change in exchage. 
+### Blind Signature Schemes (kind of)
+While analyzing the security of blind signature schemes the adversery model is one-more-forgery. 
+The scenario would be, having given `n` signatures to an adversary, is there any way it can create a new valid signature on `n+1`th message? 
+
+<!--
+To do
+#### Diffie-Hellmann 
+Note this is a key exchange scheme, and not a signature. 
+
+#### Schnor Blind Signatures
+
+#### BLS Signatures -->
+
+### Cashu Protocol 
+The description for their protocol can be found [here](https://gist.github.com/callebtc/557e4cc15f9e43d7474c7cb3d31ee8ed). Cashu uses the blind version of Diffie-Hellman instead of a signature (the idea and the concepts are quite similar though)
 
 ## Questions 
 
-- What is chaumian (?) eCash? 
+- Maybe a stupid question, but why isn't the list of spent coins just public?
 
  
 ## Resources 
 - [Presentation from Pete_Winn](https://www.youtube.com/watch?v=G4iclApJL0c)
 - [Adam Gibson's presentation on Chaumian eCash in Bitcoin](https://www.youtube.com/watch?v=VwMzNE1D3so&t=64s)
+- [Adam Gibson's notes from the presentation](https://gist.github.com/AdamISZ/28c3475734becf031c9924f0b50d1bed)
